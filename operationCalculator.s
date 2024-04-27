@@ -132,11 +132,11 @@ remainder:
 		j loop				# Back to loop
 
 result:
-		la $a0, resmsg	 	# Prints "Result: "
+		la $a0, resmsg		# Prints "Result: "
 		li  $v0, 4
 		syscall
 		
-		move $a0, $s0  		# Prints result
+		move $a0, $s0		# Prints result
 		li $v0, 1
 		syscall
 		
