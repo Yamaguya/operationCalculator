@@ -50,16 +50,16 @@ loop:
 		
 		lb $s1, oper
 		
-		li $t1, '+'						# Loads constant for addition
-		li $t2, '-'						# Loads constant for subtraction
-		li $t3, '*'						# Loads constant for multiplication
-		li $t4, '/'						# Loads constant for division
-		li $t5, '%'						# Loads constant for remainder
-		li $t6, '='						# Loads constant for equals sign
+		li $t1, '+'				# Loads constant for addition
+		li $t2, '-'				# Loads constant for subtraction
+		li $t3, '*'				# Loads constant for multiplication
+		li $t4, '/'				# Loads constant for division
+		li $t5, '%'				# Loads constant for remainder
+		li $t6, '='				# Loads constant for equals sign
 		
 		beq $s1, $t1, addition			# If user chose addition jump to addition
 		beq $s1, $t2, subtraction		# If user chose subtraction jump to subtraction
-		beq $s1, $t3, multiplication	# If user chose multiplication jump to multiplication
+		beq $s1, $t3, multiplication		# If user chose multiplication jump to multiplication
 		beq $s1, $t4, division			# If user chose division jump to division
 		beq $s1, $t5, remainder			# If user chose remainder jump to remainder
 		beq $s1, $t6, result			# If user chose equals sign jump to result
